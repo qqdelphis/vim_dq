@@ -33,10 +33,16 @@ map <leader>t. :tabedit .<CR>
 map <leader>tc :tabclose<CR>
 map <leader>tm :tabmove<CR>
 "map <leader>tt :tabNext<CR>
-map <leader>e :tabedit ~/.vimrc
-map <leader>s :source ~/.vimrc
+" map <leader>e :tabedit ~/.vimrc
+" map <leader>s :source ~/.vimrc
 map <silent> <S-h> gT
 map <silent> <S-l> gt
 
 nmap <C-p> :cprev<CR>
 nmap <C-n> :cnext<CR>
+if (g:iswindows)
+else
+endif
+if (g:iswindows && g:isGUI)
+    let guifont=Consolas:h10
+endif

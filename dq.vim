@@ -44,5 +44,7 @@ if (g:iswindows)
 else
 endif
 if (g:iswindows && g:isGUI)
-    let guifont=Consolas:h10
+    set guifont=Consolas:h9:cANSI
 endif
+
+let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz;'

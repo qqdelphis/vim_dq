@@ -9,6 +9,9 @@
 " nmap <silent> <leader>e :e ~/.vimrc<CR>
 " nmap <silent> <leader>t :Tlist<CR>
 "Fast saving
+
+Bundle 'tablify'
+
 nmap <silent> <leader>ww :w<CR>
 nmap <silent> <leader>wf :w!<CR>
 "Fast quiting
